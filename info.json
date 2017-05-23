@@ -1,0 +1,11 @@
+{
+    "name": "SiegeTank",
+    "version": "0.1.0",
+    "title": "Siege Tank",
+    "author": "Eric Kidd",
+    "contact": "git@randomhacks.net",
+    "homepage": "FactorioSiegeTank",
+    "factorio_version": "0.15",
+    "dependencies": ["base >= 0.15"],
+    "description": "Adds a late-game \"planetary siege tank\" for clearing massive nests of behemoths.  It features a nuclear-capable rocket launcher, an equipment grid, and nuclear fuel.  It can be transported with full inventory on a special train wagon."
+}
