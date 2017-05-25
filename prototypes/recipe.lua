@@ -3,7 +3,7 @@ data:extend {
       type = "recipe",
       name = "siege-tank",
       normal = {
-         enabled = true,
+         enabled = false,
          ingredients = {
             {"electric-engine-unit", 64},
             {"steel-plate", 100},
@@ -31,7 +31,7 @@ data:extend {
       type = "recipe",
       name = "siege-tank-steam-turbine-equipment",
       normal = {
-         enabled = true,
+         enabled = false,
          ingredients = {
             {"steam-turbine", 1},
             {"processing-unit", 50},
