@@ -1,7 +1,7 @@
 data:extend {
    {
       type = "equipment-grid",
-      name = "siege-tank-equipment-grid",
+      name = "nuclear-vehicle-tank-equipment-grid",
       -- Our equipment grid is rather small (the same size as the mk2 power
       -- armor, and smaller than most vehicle grid modules).  This is our
       -- best knob to control exactly how powerful the tank is during
@@ -25,6 +25,6 @@ data:extend {
       --    sheilds than you can on power armor with the same grid size.
       width = 10,
       height = 10,
-      equipment_categories = {"armor", "siege-tank"}
+      equipment_categories = {"armor", "nuclear-vehicle-power"}
    }
 }

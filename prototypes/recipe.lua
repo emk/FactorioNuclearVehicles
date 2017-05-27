@@ -1,50 +1,27 @@
 data:extend {
    {
       type = "recipe",
-      name = "siege-tank",
-      normal = {
-         enabled = false,
-         ingredients = {
-            {"electric-engine-unit", 64},
-            {"steel-plate", 100},
-            {"iron-gear-wheel", 30},
-            {"speed-module-3", 25},
-            {"processing-unit", 250},
-            {"steam-turbine", 1},
-         },
-         result = "siege-tank"
+      name = "nuclear-vehicle-steam-turbine",
+      enabled = false,
+      ingredients =  {
+         {"iron-gear-wheel", 50},
+         {"steel-plate", 50},
+         {"speed-module-3", 10},
+         {"productivity-module-3", 5},
       },
-      expensive = {
-         enabled = true,
-         ingredients = {
-            {"electric-engine-unit", 128},
-            {"steel-plate", 200},
-            {"iron-gear-wheel", 60},
-            {"speed-module-3", 50},
-            {"processing-unit", 500},
-            {"steam-turbine", 2},
-         },
-         result = "siege-tank"
-      }
+      result = "nuclear-vehicle-steam-turbine"
    },
    {
       type = "recipe",
-      name = "siege-tank-steam-turbine-equipment",
-      normal = {
-         enabled = false,
-         ingredients = {
-            {"steam-turbine", 1},
-            {"processing-unit", 50},
-         },
-         result = "siege-tank-steam-turbine-equipment"
+      name = "nuclear-vehicle-tank",
+      enabled = false,
+      ingredients = {
+         {"electric-engine-unit", 64},
+         {"steel-plate", 100},
+         {"iron-gear-wheel", 30},
+         {"processing-unit", 250},
+         {"nuclear-vehicle-steam-turbine", 1},
       },
-      expensive = {
-         enabled = true,
-         ingredients = {
-            {"steam-turbine", 2},
-            {"processing-unit", 100},
-         },
-         result = "siege-tank-steam-turbine-equipment"
-      }
-   }   
+      result = "nuclear-vehicle-tank"
+   }
 }

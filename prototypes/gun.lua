@@ -1,11 +1,11 @@
 data:extend {
    {
       type = "gun",
-      name = "siege-tank-rocket-launcher",
+      name = "nuclear-vehicle-rocket-launcher",
       icon = "__base__/graphics/icons/rocket-launcher.png",
       flags = {"goes-to-main-inventory", "hidden"},
       subgroup = "gun",
-      order = "b[rocket-launcher]-b[siege-tank-rocket-launcher]",
+      order = "b[rocket-launcher]-b[nuclear-vehicle-rocket-launcher]",
       attack_parameters = {
          type = "projectile",
          ammo_category = "rocket",

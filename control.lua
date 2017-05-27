@@ -1,9 +1,9 @@
 -- "Recharge" steam turbines from the tank's fuel supply.  TANSTAAFL.  See
--- the comments for siege-tank-steam-turbine-equipment for a discussion of
+-- the comments for nuclear-vehicle-steam-turbine for a discussion of
 -- game balance issues.
 function update_steam_turbines(tank)
    for index, equipment in pairs(tank.grid.equipment) do
-      if equipment.name == 'siege-tank-steam-turbine-equipment' then
+      if equipment.name == 'nuclear-vehicle-steam-turbine' then
          if equipment.energy < equipment.max_energy then
             local wanted = equipment.max_energy - equipment.energy
             -- Steal the energy directly from remaining_burning_fuel so
@@ -24,7 +24,7 @@ script.on_event({defines.events.on_tick},
    function (e)
       -- Check once per second.
       if e.tick % 60 == 0 then
-         tanks = game.surfaces[1].find_entities_filtered{type = "car", name = "siege-tank"}
+         tanks = game.surfaces[1].find_entities_filtered{type = "car", name = "nuclear-vehicle-tank"}
          for index,tank in pairs(tanks) do
             update_steam_turbines(tank)
          end

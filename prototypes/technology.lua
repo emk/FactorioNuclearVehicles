@@ -1,21 +1,41 @@
 data:extend {
    {
       type = "technology",
-      name = "siege-tank",
+      name = "nuclear-vehicles",
+      icon = "__base__/graphics/entity/steam-turbine/steam-turbine-H.png",
+      effects = {
+         {
+            type = "unlock-recipe",
+            recipe = "nuclear-vehicle-steam-turbine"
+         },
+      },
+      prerequisites = {"nuclear-power", "speed-module-3", "productivity-module-3"},
+      unit = {
+         count = 1500,
+         ingredients = {
+            {"science-pack-1", 1},
+            {"science-pack-2", 1},
+            {"science-pack-3", 1},
+            {"production-science-pack", 1},
+            {"high-tech-science-pack", 1}
+         },
+         time = 45
+      },
+      order = "e-c-c"
+   },
+   {
+      type = "technology",
+      name = "nuclear-vehicle-tanks",
       icon = "__base__/graphics/technology/tanks.png",
       effects = {
          {
             type = "unlock-recipe",
-            recipe = "siege-tank"
-         },
-         {
-            type = "unlock-recipe",
-            recipe = "siege-tank-steam-turbine-equipment"
+            recipe = "nuclear-vehicle-tank"
          },
       },
-      prerequisites = {"nuclear-power", "tanks"},
+      prerequisites = {"nuclear-vehicles", "tanks"},
       unit = {
-         count = 1000,
+         count = 1500,
          ingredients = {
             {"science-pack-1", 1},
             {"science-pack-2", 1},
@@ -25,6 +45,6 @@ data:extend {
          },
          time = 45
       },
-      order = "e-c-c"
+      order = "e-c-d"
    },
 }

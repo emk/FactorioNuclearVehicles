@@ -1,11 +1,11 @@
 {
-    "name": "SiegeTank",
+    "name": "NuclearVehicles",
     "version": "0.1.0",
-    "title": "Siege Tank",
+    "title": "Nuclear Vehicles",
     "author": "Eric Kidd",
     "contact": "git@randomhacks.net",
-    "homepage": "FactorioSiegeTank",
+    "homepage": "https://github.com/emk/FactorioNuclearVehicles",
     "factorio_version": "0.15",
     "dependencies": ["base >= 0.15"],
-    "description": "Adds a late-game \"planetary siege tank\" for clearing massive nests of behemoths.  It features a nuclear-capable rocket launcher, an equipment grid, and nuclear fuel.  It can be transported with full inventory on a special train wagon."
+    "description": "A nuclear tank with a rocket launcher and equipment grid! Designed to make clearing screen-sized behemoth nests more fun (but you still need skill and weapons production to win)."
 }

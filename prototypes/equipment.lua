@@ -6,7 +6,7 @@ data:extend {
    -- in the game.
    {
       type = "battery-equipment",
-      name = "siege-tank-steam-turbine-equipment",
+      name = "nuclear-vehicle-steam-turbine",
       sprite = {
          filename = "__base__/graphics/entity/steam-turbine/steam-turbine-H.png",
          width = 160,
@@ -34,6 +34,6 @@ data:extend {
          output_flow_limit = "4MW",
          usage_priority = "secondary-output"
       },
-      categories = {"siege-tank"}
+      categories = {"nuclear-vehicle-power"}
    }
 }
